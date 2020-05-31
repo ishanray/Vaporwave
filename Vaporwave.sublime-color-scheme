@@ -8,7 +8,7 @@
         "cyan": "hsl(191, 69%, 61%)",
         "cyan2": "hsl(140, 73%, 61%)",
         "orange": "hsl(48, 100%, 50%)",
-        "pink": "hsl(322, 95%, 57%)",
+        "pink": "hsl(322, 65%, 47%)",
         "purple": "hsl(278, 86%, 60%)",
         "purple2": "hsl(278, 38%, 69%)",
         "purple3": "hsl(262, 32%, 30%)",
@@ -23,35 +23,13 @@
         "background": "var(black)",
         "caret": "var(purple5)",
         "line_highlight": "color(var(purple4) alpha(0.4))",
-        "selection": "color(var(purple3) alpha(0.53))"
+        "selection": "color(var(purple3) alpha(0.53))",
+        "line_diff_deleted": "color(var(purple))",
+        "line_diff_added": "color(var(purple) alpha(0.8))",
+        "line_diff_modified": "color(var(purple2) alpha(0.73))"
     },
     "rules":
     [
-        {
-            "name": "GitGutter deleted",
-            "scope": "markup.deleted.git_gutter",
-            "foreground": "var(purple)"
-        },
-        {
-            "name": "GitGutter inserted",
-            "scope": "markup.inserted.git_gutter",
-            "foreground": "color(var(purple) alpha(0.8))"
-        },
-        {
-            "name": "GitGutter changed",
-            "scope": "markup.changed.git_gutter",
-            "foreground": "color(var(purple2) alpha(0.93))"
-        },
-        {
-            "name": "GitGutter untracked",
-            "scope": "markup.untracked.git_gutter",
-            "foreground": "var(purple)"
-        },
-        {
-            "name": "GitGutter ignored",
-            "scope": "markup.ignored.git_gutter",
-            "foreground": "color(var(white) alpha(0.35))"
-        },
         {
             "name": "COMMENT",
             "scope": "comment, punctuation.definition.comment, punctuation.definition.tag, comment.block.documentation punctuation.definition.bracket, source.ocaml comment constant.regexp meta.separator",
